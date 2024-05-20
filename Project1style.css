@@ -1,0 +1,253 @@
+* {
+    font-family: "MedievalSharp";
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+@font-face {
+    font-family: 'lucida_sans_blackletter';
+    src: url(./assets/fonts/lucindablack.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: 'lucida_sans_blackletter', sans-serif;
+}
+
+body {
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.main_castle_logo {
+    height: 50px;
+    width: 70px;
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.search_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.search_bar {
+    display: flex;
+    width: 350px;
+    height: 2rem;
+    background-color: #ebe4e4;
+    border-radius: 142px 142px 142px 142px;
+}
+
+.search_bar_placeholder {
+    background-color: transparent;
+    align-self: center;
+    padding-left: 15px;
+    color: rgb(114, 113, 113);
+}
+
+
+.search_bar_input {
+
+    margin-left: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.search_bar_input:focus {
+    outline: none !important;
+    color: rgb(27, 26, 26);
+}
+
+
+.games {
+    width: 100px;
+    height: 31.99px;
+    border-radius: 142px 142px 142px 142px;
+    background-color: #3f2222;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.games:hover {
+    opacity: 85%;
+    color: yellow;
+}
+
+
+.categories_bar {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: auto;
+    align-items: normal;
+    margin-left: 20px;
+    gap: 15px;
+    padding-bottom: 10px;
+    padding-left: var(--space-800);
+    padding-right: var(--space-800);
+    
+}
+
+
+/* .catego_klass {
+    align-items: center;
+} */
+
+.catego_general {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(233, 224, 175);
+    border-radius: 142px 142px 142px 142px;
+    padding: 3px;
+    color: black;
+}
+
+.catego_general:hover {
+    opacity: 85%;
+    box-shadow: 2px 2px #888888;
+
+}
+
+.categories_thumbnail {
+    width: 31.99px;
+    height: 31.99px;
+    border-radius: 142px 142px 142px 142px;
+    margin-right: 2px;
+}
+
+p {
+
+    margin: auto;
+    background-color: transparent;
+}
+
+hr.style-one {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    }
+
+.card_container {
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 25px;
+    row-gap: 10px;
+    padding: 8px 10px 0px;
+    justify-content: center;
+    max-width: 1340px;
+
+    
+}
+
+.card {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin: 10px auto 0 auto;
+}
+
+.card-screen {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.card-screen:hover {
+    opacity: 75%;
+    color: yellow;
+}
+
+.card_pic {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: smaller;
+    padding-top: 7px;
+    margin-left: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos tablet */
+@media screen and (max-width: 1080px){
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+.catego_general{
+    background-color: #743737;
+    height: 1.0rem;
+}
+
+.categories_thumbnail {
+    width: 21.99px;
+    height: 21.99px;
+
+    .card_container {
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    .card-title{
+        color: rgb(44, 55, 221);
+        text-decoration: underline;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+}
